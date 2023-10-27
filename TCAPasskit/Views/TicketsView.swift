@@ -17,10 +17,10 @@ struct TicketsView: View {
             if let user {
                 Text("User is logged in!")
 
-                if user.authHasExpired {
-                    Text("Auth has expired :(")
-                        .foregroundStyle(.red)
-                }
+//                if user.authHasExpired {
+//                    Text("Auth has expired :(")
+//                        .foregroundStyle(.red)
+//                }
             } else {
                 Text("User is logged out :(")
             }

@@ -9,13 +9,13 @@ import SwiftUI
 
 final class Router: ObservableObject {
 
-    public enum Destination: Codable, Hashable {
+    public enum Route: Codable, Hashable {
         case loginView
     }
 
     @Published var navPath = NavigationPath()
 
-    func navigate(to destination: Destination) {
+    func navigate(to destination: Route) {
         navPath.append(destination)
     }
 

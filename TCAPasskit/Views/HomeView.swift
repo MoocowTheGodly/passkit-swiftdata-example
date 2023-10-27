@@ -22,21 +22,30 @@ struct HomeView: View {
     // so, for a single user, just grab the first in the array
     var user: User? { users.first }
 
+    @Query private var auths: [Auth]
+
+
     var body: some View {
         VStack {
             if let user {
                 Text("User is logged in!")
-
-                if user.authHasExpired {
-                    Text("Auth has expired :(")
-                        .foregroundStyle(.red)
-
-                    Button {
-                        context.delete(user)
-                    } label: {
-                        Text("Delete the user! (Log out)")
-                    }
+                Button {
+                    try? context.delete(model: User.self)
+                    try? context.delete(model: Auth.self)
+                } label: {
+                    Text("Log out")
                 }
+
+//                if user.authHasExpired {
+//                    Text("Auth has expired :(")
+//                        .foregroundStyle(.red)
+//
+//                    Button {
+//                        context.delete(user)
+//                    } label: {
+//                        Text("Delete the user! (Log out)")
+//                    }
+//                }
             } else {
                 Text("User is logged out :(")
 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "2925EA95-206A-40F2-9DBF-C7D123465C5A"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "708D4E08-0D02-4713-86BF-A419C94BE743"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../../../var/folders/qw/q22s66294hd1dq1cfs4rk1c40000gp/T/swift-generated-sources/@__swiftmacro_10TCAPasskit4UserC11cancelables33_3AB717E1B48BB2B432BE455EDAA3B042LL18_PersistedPropertyfMa_.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1"
+            endingLineNumber = "1"
+            landmarkName = "cancelables"
+            landmarkType = "37">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
