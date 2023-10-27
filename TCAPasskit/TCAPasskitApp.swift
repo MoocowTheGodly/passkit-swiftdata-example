@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct TCAPasskitApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MasterView()
         }
+        .modelContainer(for: User.self)
     }
 }

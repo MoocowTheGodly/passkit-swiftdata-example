@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		B2F61A472AEB677D00A982B6 /* TCAPasskitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F61A462AEB677D00A982B6 /* TCAPasskitApp.swift */; };
-		B2F61A492AEB677D00A982B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F61A482AEB677D00A982B6 /* ContentView.swift */; };
 		B2F61A4B2AEB677F00A982B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F61A4A2AEB677F00A982B6 /* Assets.xcassets */; };
-		B2F61A4E2AEB677F00A982B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F61A4D2AEB677F00A982B6 /* Preview Assets.xcassets */; };
+		B2F61A552AEB693200A982B6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F61A542AEB693200A982B6 /* HomeView.swift */; };
+		B2F61A702AEB75FF00A982B6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F61A6F2AEB75FF00A982B6 /* LoginView.swift */; };
+		B2F61A722AEB7A7D00A982B6 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F61A712AEB7A7D00A982B6 /* MasterView.swift */; };
+		B2F61A742AEB849500A982B6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F61A732AEB849500A982B6 /* Router.swift */; };
+		B2F61A792AEB878500A982B6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F61A782AEB878500A982B6 /* User.swift */; };
+		B2F61A7C2AEB8BFB00A982B6 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F61A7B2AEB8BFB00A982B6 /* Date.swift */; };
+		B2F61A802AEB929C00A982B6 /* TicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F61A7F2AEB929C00A982B6 /* TicketsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B2F61A432AEB677D00A982B6 /* TCAPasskit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCAPasskit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F61A462AEB677D00A982B6 /* TCAPasskitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAPasskitApp.swift; sourceTree = "<group>"; };
-		B2F61A482AEB677D00A982B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B2F61A4A2AEB677F00A982B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B2F61A4D2AEB677F00A982B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B2F61A542AEB693200A982B6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B2F61A6F2AEB75FF00A982B6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B2F61A712AEB7A7D00A982B6 /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
+		B2F61A732AEB849500A982B6 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B2F61A782AEB878500A982B6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B2F61A7B2AEB8BFB00A982B6 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		B2F61A7F2AEB929C00A982B6 /* TicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,20 +61,49 @@
 		B2F61A452AEB677D00A982B6 /* TCAPasskit */ = {
 			isa = PBXGroup;
 			children = (
+				B2F61A7A2AEB8BF000A982B6 /* Extensions */,
+				B2F61A772AEB873200A982B6 /* Models */,
 				B2F61A462AEB677D00A982B6 /* TCAPasskitApp.swift */,
-				B2F61A482AEB677D00A982B6 /* ContentView.swift */,
+				B2F61A762AEB86E500A982B6 /* Navigation */,
+				B2F61A752AEB86C000A982B6 /* Views */,
 				B2F61A4A2AEB677F00A982B6 /* Assets.xcassets */,
-				B2F61A4C2AEB677F00A982B6 /* Preview Content */,
 			);
 			path = TCAPasskit;
 			sourceTree = "<group>";
 		};
-		B2F61A4C2AEB677F00A982B6 /* Preview Content */ = {
+		B2F61A752AEB86C000A982B6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B2F61A4D2AEB677F00A982B6 /* Preview Assets.xcassets */,
+				B2F61A712AEB7A7D00A982B6 /* MasterView.swift */,
+				B2F61A6F2AEB75FF00A982B6 /* LoginView.swift */,
+				B2F61A542AEB693200A982B6 /* HomeView.swift */,
+				B2F61A7F2AEB929C00A982B6 /* TicketsView.swift */,
 			);
-			path = "Preview Content";
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B2F61A762AEB86E500A982B6 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B2F61A732AEB849500A982B6 /* Router.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		B2F61A772AEB873200A982B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2F61A782AEB878500A982B6 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B2F61A7A2AEB8BF000A982B6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B2F61A7B2AEB8BFB00A982B6 /* Date.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +122,8 @@
 			dependencies = (
 			);
 			name = TCAPasskit;
+			packageProductDependencies = (
+			);
 			productName = TCAPasskit;
 			productReference = B2F61A432AEB677D00A982B6 /* TCAPasskit.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +152,8 @@
 				Base,
 			);
 			mainGroup = B2F61A3A2AEB677D00A982B6;
+			packageReferences = (
+			);
 			productRefGroup = B2F61A442AEB677D00A982B6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,7 +168,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2F61A4E2AEB677F00A982B6 /* Preview Assets.xcassets in Resources */,
 				B2F61A4B2AEB677F00A982B6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2F61A492AEB677D00A982B6 /* ContentView.swift in Sources */,
+				B2F61A702AEB75FF00A982B6 /* LoginView.swift in Sources */,
+				B2F61A552AEB693200A982B6 /* HomeView.swift in Sources */,
+				B2F61A7C2AEB8BFB00A982B6 /* Date.swift in Sources */,
+				B2F61A792AEB878500A982B6 /* User.swift in Sources */,
+				B2F61A742AEB849500A982B6 /* Router.swift in Sources */,
+				B2F61A722AEB7A7D00A982B6 /* MasterView.swift in Sources */,
 				B2F61A472AEB677D00A982B6 /* TCAPasskitApp.swift in Sources */,
+				B2F61A802AEB929C00A982B6 /* TicketsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +319,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TCAPasskit/Preview Content\"";
 				DEVELOPMENT_TEAM = YLC373GKJ8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -300,7 +347,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TCAPasskit/Preview Content\"";
 				DEVELOPMENT_TEAM = YLC373GKJ8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
