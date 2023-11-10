@@ -11,8 +11,6 @@
 		B23C35642AFEC3D30059753A /* SwiftDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C35632AFEC3D30059753A /* SwiftDataProvider.swift */; };
 		B2AB34FF2AFD928A00945A1F /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AB34FE2AFD928A00945A1F /* NetworkingService.swift */; };
 		B2AB35042AFD97E100945A1F /* UserAGModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AB35032AFD97E100945A1F /* UserAGModel.swift */; };
-		B2AB35092AFD9D4700945A1F /* KeanuRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AB35082AFD9D4700945A1F /* KeanuRequest.swift */; };
-		B2AB350B2AFD9F5000945A1F /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AB350A2AFD9F5000945A1F /* URLRequest.swift */; };
 		B2AB350D2AFDBC4400945A1F /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AB350C2AFDBC4400945A1F /* Encodable.swift */; };
 		B2AB350F2AFDC6F300945A1F /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AB350E2AFDC6F200945A1F /* URL.swift */; };
 		B2F61A472AEB677D00A982B6 /* TCAPasskitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F61A462AEB677D00A982B6 /* TCAPasskitApp.swift */; };
@@ -48,8 +46,6 @@
 		B23C35632AFEC3D30059753A /* SwiftDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataProvider.swift; sourceTree = "<group>"; };
 		B2AB34FE2AFD928A00945A1F /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		B2AB35032AFD97E100945A1F /* UserAGModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAGModel.swift; sourceTree = "<group>"; };
-		B2AB35082AFD9D4700945A1F /* KeanuRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeanuRequest.swift; sourceTree = "<group>"; };
-		B2AB350A2AFD9F5000945A1F /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
 		B2AB350C2AFDBC4400945A1F /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 		B2AB350E2AFDC6F200945A1F /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		B2F61A432AEB677D00A982B6 /* TCAPasskit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCAPasskit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,7 +115,6 @@
 		B2AB35062AFD9D1C00945A1F /* RequestModels */ = {
 			isa = PBXGroup;
 			children = (
-				B2AB35082AFD9D4700945A1F /* KeanuRequest.swift */,
 				B23C35602AFEAAF90059753A /* KeanuAuthRequest.swift */,
 			);
 			path = RequestModels;
@@ -190,7 +185,6 @@
 			isa = PBXGroup;
 			children = (
 				B2F61A7B2AEB8BFB00A982B6 /* Date.swift */,
-				B2AB350A2AFD9F5000945A1F /* URLRequest.swift */,
 				B2AB350C2AFDBC4400945A1F /* Encodable.swift */,
 				B2AB350E2AFDC6F200945A1F /* URL.swift */,
 			);
@@ -294,14 +288,12 @@
 				B2AB350F2AFDC6F300945A1F /* URL.swift in Sources */,
 				B23C35642AFEC3D30059753A /* SwiftDataProvider.swift in Sources */,
 				B2F61A7C2AEB8BFB00A982B6 /* Date.swift in Sources */,
-				B2AB350B2AFD9F5000945A1F /* URLRequest.swift in Sources */,
 				B2F61A792AEB878500A982B6 /* User.swift in Sources */,
 				B2F61A742AEB849500A982B6 /* Router.swift in Sources */,
 				B2AB34FF2AFD928A00945A1F /* NetworkingService.swift in Sources */,
 				B2AB35042AFD97E100945A1F /* UserAGModel.swift in Sources */,
 				B23C35612AFEAAF90059753A /* KeanuAuthRequest.swift in Sources */,
 				B2F61A722AEB7A7D00A982B6 /* MasterView.swift in Sources */,
-				B2AB35092AFD9D4700945A1F /* KeanuRequest.swift in Sources */,
 				B2F61A472AEB677D00A982B6 /* TCAPasskitApp.swift in Sources */,
 				B2F61AAB2AEC2C9100A982B6 /* KeanuAuth.swift in Sources */,
 			);

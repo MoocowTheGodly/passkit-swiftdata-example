@@ -12,13 +12,10 @@ class UserAGModel: ObservableObject {
     let userService: NetworkingService = .shared
 
     func fetchUser(userId: String) async throws {
-//        user = try await UserService.shared.fetchUserInfo(id: "")
         user = try await userService.load(Resource(url: .userByUserId(userId)))
     }
 
     func fetchUser(email: String) async throws {
-//        user = try await UserService.shared.fetchUserInfo(id: "")
-//        let resource = Resource(url: .userService)
         user = try await userService.load(
             Resource(url: .userService, method: .get([.init(name: "email", value: email)]))
         )

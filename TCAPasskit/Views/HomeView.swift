@@ -50,13 +50,3 @@ struct HomeView: View {
         }
     }
 }
-
-extension HomeView {
-    var loginStack: some View {
-        Button {
-            router.navigate(to: .loginView)
-        } label: {
-            Text("Go to login screen")
-        }
-    }
-}

@@ -36,7 +36,6 @@ class NetworkingService {
 
         let configuration = URLSessionConfiguration.default
         configuration.httpAdditionalHeaders = ["Content-Type": "application/json"]
-//        configuration.httpAdditionalHeaders = [""]
         await extractAuth()
         if let auth = auths.first {
             configuration.httpAdditionalHeaders = ["Authorization": "Bearer \(auth.token)"]

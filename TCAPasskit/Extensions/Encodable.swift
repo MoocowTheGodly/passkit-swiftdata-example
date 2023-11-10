@@ -10,7 +10,6 @@ extension Encodable {
             let data = try encoder.encode(self)
             return try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any]
         } catch {
-//            LoggingService.record(EncodableError.asDictionary(error), message: "Error trying to encode dictionary")
             return nil
         }
     }
