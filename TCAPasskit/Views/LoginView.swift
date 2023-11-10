@@ -9,56 +9,123 @@ import FirebaseFirestore
 @MainActor
 struct LoginView: View {
     @Environment(\.modelContext) private var context
+    @EnvironmentObject var userModel: UserAGModel
 
-    @Query private var users: [User]
-    var user: User? { users.first }
+    @Query private var savedUsers: [PersistentUser]
+    var savedUser: PersistentUser? { savedUsers.first }
+
+    @FocusState var focusedField: FocusedField?
+    @State private var email: String = ""
+    @State private var password: String = ""
+    @State var showPassword = false
 
     var body: some View {
-        Text("This is the login page!")
-        if let user {
-            Text("User is logged in!")
-            Text("User name: \(user.firstName) \(user.lastName)")
-
-//            if user.authHasExpired {
-//                Text("Auth has expired :(")
-//                    .foregroundStyle(.red)
-//            }
-        } else {
-            Button {
-                fetchUser()
-            } label: {
-                Text("Add a user (Emulate login)")
+        VStack(alignment: .center) {
+            Text("This is the login page!")
+            Spacer()
+            if let savedUser {
+                loggedInView(savedUser)
+            } else {
+                loggedOutView
             }
+            Spacer()
+        }
+        .onReceive(userModel.$user) { user in
+            saveUser(user)
         }
     }
 }
 
+// MARK: - ViewComponents
+
 extension LoginView {
-    func fetchUser() {
-        Firestore.firestore().collection("user").document("zMU32rv8S3t60KAqX55G").addSnapshotListener { (snapshot, error) in
-            guard let snapshot else {
-                print("no docs found")
-                return
-            }
-
-            guard let data = snapshot.data() else { return }
-            let firstName = data["firstName"] as? String ?? ""
-            let lastName = data["lastName"] as? String ?? ""
-            let email = data["email"] as? String ?? ""
-            let id = snapshot.documentID
-
-            if let user {
-                users[0].firstName = firstName
-                users[0].lastName = lastName
-                users[0].email = email
-                users[0].id = id
-                try? context.save()
-            } else {
-                let user = User(id: id, firstName: firstName, lastName: lastName, email: email)
-                print("adding user: \(user)")
-                context.insert(user)
+    private func loggedInView(_ savedUser: PersistentUser) -> some View {
+        Group {
+            Text("Logged in user: \(savedUser.firstName) \(savedUser.lastName)")
+            Button {
+                context.delete(savedUser)
+            } label: {
+                Text("Log out")
             }
         }
+    }
+
+    private var loggedOutView: some View {
+        VStack(alignment: .center, spacing: 20) {
+            emailField
+            passwordField
+
+            Button {
+                login()
+            } label: {
+                Text("Login")
+            }
+        }
+        .padding(.horizontal, 40)
+    }
+
+    private var emailField: some View {
+        TextField("email", text: $email)
+            .textContentType(.username)
+            .keyboardType(.emailAddress)
+            .submitLabel(.next)
+            .focused($focusedField, equals: .email)
+    }
+
+    private var passwordField: some View {
+        ZStack(alignment: .trailing) {
+            TextField("password", text: $password)
+                .focused($focusedField, equals: .passwordShown)
+                .opacity(showPassword ? 1 : 0)
+                .textContentType(.password)
+
+            SecureField("password", text: $password)
+                .focused($focusedField, equals: .passwordHidden)
+                .opacity(showPassword ? 0 : 1)
+                .textContentType(.password)
+
+            Button(action: {
+                showPassword.toggle()
+                focusedField = showPassword ? .passwordShown : .passwordHidden
+            }, label: {
+                Image(systemName: showPassword ? "eye" : "eye.slash")
+            })
+        }
+        .submitLabel(.go)
+    }
+}
+
+// MARK: - ViewBehaviors
+
+extension LoginView {
+    func login() {
+        Task {
+            let authRequest = KeanuAuthRequest(email: email, password: password)
+            try await userModel.login(request: authRequest)
+            try await userModel.fetchUser(email: email)
+        }
+    }
+
+    func saveUser(_ user: User?) {
+        guard let persistentUser = user?.asPersistentData() else { return }
+
+        if savedUser != nil {
+            savedUsers[0].id = persistentUser.id
+            savedUsers[0].firstName = persistentUser.firstName
+            savedUsers[0].lastName = persistentUser.lastName
+        } else {
+            context.insert(persistentUser)
+        }
+    }
+}
+
+// MARK: - Other
+
+extension LoginView {
+    enum FocusedField: Hashable {
+        case email
+        case passwordShown
+        case passwordHidden
     }
 }
 

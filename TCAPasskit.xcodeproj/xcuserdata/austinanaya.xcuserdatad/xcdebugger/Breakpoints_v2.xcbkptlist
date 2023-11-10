@@ -20,5 +20,225 @@
             landmarkType = "37">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "19831D8D-CB0B-42D1-849D-018ECA8BC682"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TCAPasskit/Services/UserService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "load(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "19831D8D-CB0B-42D1-849D-018ECA8BC682 - 1b55d5493b254ff7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TCAPasskit.UserService.load&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(TCAPasskit.Resource&lt;&#x3c4;_0_0&gt;) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "TCAPasskit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/austinanaya/Desktop/work/prosig/TCAPasskit/TCAPasskit/Services/UserService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "3363">
+               </Location>
+               <Location
+                  uuid = "19831D8D-CB0B-42D1-849D-018ECA8BC682 - 3bc524d86d0ef3f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for TCAPasskit.UserService.load&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(TCAPasskit.Resource&lt;&#x3c4;_0_0&gt;) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "TCAPasskit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/austinanaya/Desktop/work/prosig/TCAPasskit/TCAPasskit/Services/UserService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "1243">
+               </Location>
+               <Location
+                  uuid = "19831D8D-CB0B-42D1-849D-018ECA8BC682 - 280d4c10046555f2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for TCAPasskit.UserService.load&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(TCAPasskit.Resource&lt;&#x3c4;_0_0&gt;) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "TCAPasskit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/austinanaya/Desktop/work/prosig/TCAPasskit/TCAPasskit/Services/UserService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  uuid = "19831D8D-CB0B-42D1-849D-018ECA8BC682 - 1b55d5493b254ff7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TCAPasskit.UserService.load&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(TCAPasskit.Resource&lt;&#x3c4;_0_0&gt;) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "TCAPasskit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/austinanaya/Desktop/work/prosig/TCAPasskit/TCAPasskit/Services/UserService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "2666">
+               </Location>
+               <Location
+                  uuid = "19831D8D-CB0B-42D1-849D-018ECA8BC682 - 3bc524d86d0ef3f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for TCAPasskit.UserService.load&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(TCAPasskit.Resource&lt;&#x3c4;_0_0&gt;) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "TCAPasskit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/austinanaya/Desktop/work/prosig/TCAPasskit/TCAPasskit/Services/UserService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "1238">
+               </Location>
+               <Location
+                  uuid = "19831D8D-CB0B-42D1-849D-018ECA8BC682 - 280d4c10046555f2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for TCAPasskit.UserService.load&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(TCAPasskit.Resource&lt;&#x3c4;_0_0&gt;) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "TCAPasskit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/austinanaya/Desktop/work/prosig/TCAPasskit/TCAPasskit/Services/UserService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "67">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0D52E842-D0A9-4349-BA0E-51AB8D0E7FCD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TCAPasskit/Services/UserService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "load(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0D52E842-D0A9-4349-BA0E-51AB8D0E7FCD - 1b55d5493b254068"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TCAPasskit.UserService.load&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(TCAPasskit.Resource&lt;&#x3c4;_0_0&gt;) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "TCAPasskit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/austinanaya/Desktop/work/prosig/TCAPasskit/TCAPasskit/Services/UserService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "2649">
+               </Location>
+               <Location
+                  uuid = "0D52E842-D0A9-4349-BA0E-51AB8D0E7FCD - 1b55d5493b254068"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TCAPasskit.UserService.load&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(TCAPasskit.Resource&lt;&#x3c4;_0_0&gt;) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "TCAPasskit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/austinanaya/Desktop/work/prosig/TCAPasskit/TCAPasskit/Services/UserService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "2007">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D132EED1-452D-40EE-9AF5-3982815AAAD8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TCAPasskit/Services/UserService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "load(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D132EED1-452D-40EE-9AF5-3982815AAAD8 - 1b55d5493b2541a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TCAPasskit.UserService.load&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(TCAPasskit.Resource&lt;&#x3c4;_0_0&gt;) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "TCAPasskit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/austinanaya/Desktop/work/prosig/TCAPasskit/TCAPasskit/Services/UserService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "571">
+               </Location>
+               <Location
+                  uuid = "D132EED1-452D-40EE-9AF5-3982815AAAD8 - 1b55d5493b2541a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TCAPasskit.UserService.load&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(TCAPasskit.Resource&lt;&#x3c4;_0_0&gt;) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "TCAPasskit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/austinanaya/Desktop/work/prosig/TCAPasskit/TCAPasskit/Services/UserService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "557">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E3DFA866-BBBB-4722-A5B3-BFB8C7A76FFE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TCAPasskit/Services/UserService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "load(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

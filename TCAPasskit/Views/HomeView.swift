@@ -11,50 +11,49 @@ import SwiftUI
 struct HomeView: View {
     // environment object needed for all navigation using our Router
     @EnvironmentObject var router: Router
+    @EnvironmentObject var userModel: UserAGModel
 
     // context necessary for handling of SwiftData
     @Environment(\.modelContext) private var context
 
     // every time we want to access stored objects in SwiftData, we give it @Query. SwiftData handles the rest.
     // it does need to be an array as SwiftData doesn't know if it's an array or not.
-    @Query private var users: [User]
+//    @Query private var users: [User]
 
     // so, for a single user, just grab the first in the array
-    var user: User? { users.first }
+//    var user: User? { users.first }
 
-    @Query private var auths: [Auth]
+//    @Query private var auths: [Auth]
 
 
     var body: some View {
         VStack {
-            if let user {
-                Text("User is logged in!")
-                Button {
-                    try? context.delete(model: User.self)
-                    try? context.delete(model: Auth.self)
-                } label: {
-                    Text("Log out")
-                }
+            Text("this is home screen")
 
-//                if user.authHasExpired {
-//                    Text("Auth has expired :(")
-//                        .foregroundStyle(.red)
-//
-//                    Button {
-//                        context.delete(user)
-//                    } label: {
-//                        Text("Delete the user! (Log out)")
-//                    }
-//                }
-            } else {
-                Text("User is logged out :(")
-
-                Button {
-                    router.navigate(to: .loginView)
-                } label: {
-                    Text("Tap to go to login page")
-                }
+            Button {
+                router.navigate(to: .loginView)
+            } label: {
+                Text("Tap to go to login page")
             }
+
+
+//            if let user {
+//                Text("User is logged in!")
+//                Button {
+////                    try? context.delete(model: User.self)
+////                    try? context.delete(model: Auth.self)
+//                } label: {
+//                    Text("Log out")
+//                }
+//            } else {
+//                Text("User is logged out :(")
+//
+//                Button {
+//                    router.navigate(to: .loginView)
+//                } label: {
+//                    Text("Tap to go to login page")
+//                }
+//            }
         }
     }
 }
