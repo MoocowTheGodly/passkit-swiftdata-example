@@ -18,12 +18,12 @@ struct HomeView: View {
 
     // every time we want to access stored objects in SwiftData, we give it @Query. SwiftData handles the rest.
     // it does need to be an array as SwiftData doesn't know if it's an array or not.
-//    @Query private var users: [User]
-
+    @Query private var savedUsers: [PersistentUser]
     // so, for a single user, just grab the first in the array
-//    var user: User? { users.first }
+    var savedUser: PersistentUser? { savedUsers.first }
 
-//    @Query private var auths: [Auth]
+    @Query private var savedAuths: [PersistentKeanuAuth]
+    var savedAuth: PersistentKeanuAuth? { savedAuths.first }
 
 
     var body: some View {
@@ -36,24 +36,17 @@ struct HomeView: View {
                 Text("Tap to go to login page")
             }
 
+            if let savedAuth, let savedUser {
+                Text("auth token: \(savedAuth.token)")
 
-//            if let user {
-//                Text("User is logged in!")
-//                Button {
-////                    try? context.delete(model: User.self)
-////                    try? context.delete(model: Auth.self)
-//                } label: {
-//                    Text("Log out")
-//                }
-//            } else {
-//                Text("User is logged out :(")
-//
-//                Button {
-//                    router.navigate(to: .loginView)
-//                } label: {
-//                    Text("Tap to go to login page")
-//                }
-//            }
+                Button {
+                    Task {
+                        try await userModel.fetchUser(email: savedUser.email)
+                    }
+                } label: {
+                    Text("test auth")
+                }
+            }
         }
     }
 }

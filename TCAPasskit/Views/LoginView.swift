@@ -14,6 +14,9 @@ struct LoginView: View {
     @Query private var savedUsers: [PersistentUser]
     var savedUser: PersistentUser? { savedUsers.first }
 
+    @Query private var savedAuths: [PersistentKeanuAuth]
+    var savedAuth: PersistentKeanuAuth? { savedAuths.first }
+
     @FocusState var focusedField: FocusedField?
     @State private var email: String = ""
     @State private var password: String = ""
@@ -33,6 +36,9 @@ struct LoginView: View {
         .onReceive(userModel.$user) { user in
             saveUser(user)
         }
+        .onReceive(userModel.$auth) { auth in
+            saveAuth(auth)
+        }
     }
 }
 
@@ -43,7 +49,7 @@ extension LoginView {
         Group {
             Text("Logged in user: \(savedUser.firstName) \(savedUser.lastName)")
             Button {
-                context.delete(savedUser)
+                logout()
             } label: {
                 Text("Log out")
             }
@@ -106,7 +112,16 @@ extension LoginView {
         }
     }
 
+    func logout() {
+        Task {
+            userModel.logout()
+            try context.delete(model: PersistentUser.self)
+            try context.delete(model: PersistentKeanuAuth.self)
+        }
+    }
+
     func saveUser(_ user: User?) {
+        print("user before cast: \(user)")
         guard let persistentUser = user?.asPersistentData() else { return }
 
         if savedUser != nil {
@@ -115,6 +130,18 @@ extension LoginView {
             savedUsers[0].lastName = persistentUser.lastName
         } else {
             context.insert(persistentUser)
+        }
+    }
+
+    func saveAuth(_ auth: KeanuAuth?) {
+        print("auth before cast: \(auth)")
+        guard let persistentAuth = auth?.asPersistentData() else { return }
+
+        if savedAuth != nil {
+            savedAuths[0].refreshtoken = persistentAuth.refreshtoken
+            savedAuths[0].token = persistentAuth.token
+        } else {
+            context.insert(persistentAuth)
         }
     }
 }

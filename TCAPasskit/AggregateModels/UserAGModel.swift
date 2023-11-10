@@ -30,4 +30,9 @@ class UserAGModel: ObservableObject {
             Resource(url: .authService, method: .post(data))
         )
     }
+
+    func logout() {
+        user = nil
+        auth = nil
+    }
 }

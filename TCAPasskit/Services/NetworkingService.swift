@@ -3,12 +3,15 @@
 //
 
 import Foundation
+import SwiftData
 
 class NetworkingService {
     static var shared: NetworkingService = {
         let instance = NetworkingService()
         return instance
     }()
+
+    var auths: [PersistentKeanuAuth] = []
 
     func load<T: Codable>(_ resource: Resource<T>) async throws -> T {
         var request = URLRequest(url: resource.url)
@@ -19,12 +22,11 @@ class NetworkingService {
             case let .get(queryItems):
                 var components = URLComponents(url: resource.url, resolvingAgainstBaseURL: true)
                 components?.queryItems = queryItems
-                print("components: \(components)")
                 guard let url = components?.url else {
                     throw NetworkError.badURL
                 }
-                print("componenturl: \(url)")
                 request.url = url
+
             case let .post(data):
                 request.httpBody = data
 
@@ -35,6 +37,10 @@ class NetworkingService {
         let configuration = URLSessionConfiguration.default
         configuration.httpAdditionalHeaders = ["Content-Type": "application/json"]
 //        configuration.httpAdditionalHeaders = [""]
+        await extractAuth()
+        if let auth = auths.first {
+            configuration.httpAdditionalHeaders = ["Authorization": "Bearer \(auth.token)"]
+        }
 
         let session = URLSession(configuration: configuration)
 
@@ -50,6 +56,15 @@ class NetworkingService {
         }
 
         return result
+    }
+
+    @MainActor
+    private func extractAuth() {
+        do {
+            auths = try SwiftDataProvider.shared.context.fetch(FetchDescriptor())
+        } catch {
+            print("no auth found in persistent storage")
+        }
     }
 }
 

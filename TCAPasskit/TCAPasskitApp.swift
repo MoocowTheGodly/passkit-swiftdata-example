@@ -26,6 +26,6 @@ struct TCAPasskitApp: App {
         WindowGroup {
             MasterView()
         }
-        .modelContainer(for: [PersistentUser.self])
+        .modelContainer(SwiftDataProvider.shared.container)
     }
 }
