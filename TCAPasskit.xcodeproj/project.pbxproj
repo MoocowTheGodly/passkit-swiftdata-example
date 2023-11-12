@@ -9,14 +9,25 @@
 /* Begin PBXBuildFile section */
 		B23C35612AFEAAF90059753A /* KeanuAuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C35602AFEAAF90059753A /* KeanuAuthRequest.swift */; };
 		B23C35642AFEC3D30059753A /* SwiftDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C35632AFEC3D30059753A /* SwiftDataProvider.swift */; };
+		B23C35662B0144FD0059753A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C35652B0144FD0059753A /* Color.swift */; };
+		B23C35682B01453A0059753A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C35672B01453A0059753A /* Font.swift */; };
+		B23C35722B0148B20059753A /* ShowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C35712B0148B20059753A /* ShowError.swift */; };
+		B23C35762B014CC60059753A /* BasicButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C35752B014CC60059753A /* BasicButtonStyle.swift */; };
+		B23C35792B014DF00059753A /* RoundedBorderedImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C35782B014DF00059753A /* RoundedBorderedImageModifier.swift */; };
+		B23C357B2B0152C10059753A /* Gotham-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B23C356D2B0145AF0059753A /* Gotham-Bold.ttf */; };
+		B23C357C2B0152C40059753A /* Gotham-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B23C356C2B0145AF0059753A /* Gotham-Book.ttf */; };
+		B23C357D2B0152C70059753A /* Gotham-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B23C356E2B0145AF0059753A /* Gotham-Medium.ttf */; };
+		B23C357E2B0152C70059753A /* Gotham-BookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B23C356B2B0145AF0059753A /* Gotham-BookItalic.ttf */; };
+		B23C35802B0153610059753A /* NavArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C357F2B0153610059753A /* NavArrow.swift */; };
+		B23C35842B0158560059753A /* HomeTitleStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C35832B0158560059753A /* HomeTitleStack.swift */; };
 		B2AB34FF2AFD928A00945A1F /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AB34FE2AFD928A00945A1F /* NetworkingService.swift */; };
 		B2AB35042AFD97E100945A1F /* UserAGModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AB35032AFD97E100945A1F /* UserAGModel.swift */; };
 		B2AB350D2AFDBC4400945A1F /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AB350C2AFDBC4400945A1F /* Encodable.swift */; };
 		B2AB350F2AFDC6F300945A1F /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AB350E2AFDC6F200945A1F /* URL.swift */; };
 		B2F61A472AEB677D00A982B6 /* TCAPasskitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F61A462AEB677D00A982B6 /* TCAPasskitApp.swift */; };
 		B2F61A4B2AEB677F00A982B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F61A4A2AEB677F00A982B6 /* Assets.xcassets */; };
-		B2F61A552AEB693200A982B6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F61A542AEB693200A982B6 /* HomeView.swift */; };
-		B2F61A702AEB75FF00A982B6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F61A6F2AEB75FF00A982B6 /* LoginView.swift */; };
+		B2F61A552AEB693200A982B6 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F61A542AEB693200A982B6 /* HomeScreen.swift */; };
+		B2F61A702AEB75FF00A982B6 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F61A6F2AEB75FF00A982B6 /* LoginScreen.swift */; };
 		B2F61A722AEB7A7D00A982B6 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F61A712AEB7A7D00A982B6 /* MasterView.swift */; };
 		B2F61A742AEB849500A982B6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F61A732AEB849500A982B6 /* Router.swift */; };
 		B2F61A792AEB878500A982B6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F61A782AEB878500A982B6 /* User.swift */; };
@@ -44,6 +55,18 @@
 /* Begin PBXFileReference section */
 		B23C35602AFEAAF90059753A /* KeanuAuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeanuAuthRequest.swift; sourceTree = "<group>"; };
 		B23C35632AFEC3D30059753A /* SwiftDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataProvider.swift; sourceTree = "<group>"; };
+		B23C35652B0144FD0059753A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B23C35672B01453A0059753A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		B23C356B2B0145AF0059753A /* Gotham-BookItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-BookItalic.ttf"; sourceTree = "<group>"; };
+		B23C356C2B0145AF0059753A /* Gotham-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Book.ttf"; sourceTree = "<group>"; };
+		B23C356D2B0145AF0059753A /* Gotham-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Bold.ttf"; sourceTree = "<group>"; };
+		B23C356E2B0145AF0059753A /* Gotham-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Medium.ttf"; sourceTree = "<group>"; };
+		B23C35712B0148B20059753A /* ShowError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowError.swift; sourceTree = "<group>"; };
+		B23C35752B014CC60059753A /* BasicButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicButtonStyle.swift; sourceTree = "<group>"; };
+		B23C35782B014DF00059753A /* RoundedBorderedImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderedImageModifier.swift; sourceTree = "<group>"; };
+		B23C357A2B0150D40059753A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B23C357F2B0153610059753A /* NavArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavArrow.swift; sourceTree = "<group>"; };
+		B23C35832B0158560059753A /* HomeTitleStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTitleStack.swift; sourceTree = "<group>"; };
 		B2AB34FE2AFD928A00945A1F /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		B2AB35032AFD97E100945A1F /* UserAGModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAGModel.swift; sourceTree = "<group>"; };
 		B2AB350C2AFDBC4400945A1F /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
@@ -51,8 +74,8 @@
 		B2F61A432AEB677D00A982B6 /* TCAPasskit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCAPasskit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F61A462AEB677D00A982B6 /* TCAPasskitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAPasskitApp.swift; sourceTree = "<group>"; };
 		B2F61A4A2AEB677F00A982B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B2F61A542AEB693200A982B6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		B2F61A6F2AEB75FF00A982B6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B2F61A542AEB693200A982B6 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		B2F61A6F2AEB75FF00A982B6 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		B2F61A712AEB7A7D00A982B6 /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
 		B2F61A732AEB849500A982B6 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		B2F61A782AEB878500A982B6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -94,6 +117,83 @@
 				B23C35632AFEC3D30059753A /* SwiftDataProvider.swift */,
 			);
 			path = SwiftData;
+			sourceTree = "<group>";
+		};
+		B23C35692B01456A0059753A /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B23C356A2B0145960059753A /* Fonts */,
+				B2F61A4A2AEB677F00A982B6 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B23C356A2B0145960059753A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B23C356D2B0145AF0059753A /* Gotham-Bold.ttf */,
+				B23C356C2B0145AF0059753A /* Gotham-Book.ttf */,
+				B23C356B2B0145AF0059753A /* Gotham-BookItalic.ttf */,
+				B23C356E2B0145AF0059753A /* Gotham-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B23C356F2B0146BF0059753A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B2F61A6F2AEB75FF00A982B6 /* LoginScreen.swift */,
+				B2F61A542AEB693200A982B6 /* HomeScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B23C35702B0148850059753A /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				B23C35712B0148B20059753A /* ShowError.swift */,
+			);
+			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		B23C35732B014CB00059753A /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				B23C35742B014CB50059753A /* Button */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		B23C35742B014CB50059753A /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				B23C35752B014CC60059753A /* BasicButtonStyle.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		B23C35772B014DCE0059753A /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				B23C35782B014DF00059753A /* RoundedBorderedImageModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		B23C35812B0157D30059753A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B23C35832B0158560059753A /* HomeTitleStack.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B23C35822B0157DD0059753A /* Universal */ = {
+			isa = PBXGroup;
+			children = (
+				B23C357F2B0153610059753A /* NavArrow.swift */,
+			);
+			path = Universal;
 			sourceTree = "<group>";
 		};
 		B2AB34FD2AFD927C00945A1F /* Services */ = {
@@ -139,6 +239,10 @@
 		B2F61A452AEB677D00A982B6 /* TCAPasskit */ = {
 			isa = PBXGroup;
 			children = (
+				B23C357A2B0150D40059753A /* Info.plist */,
+				B23C35772B014DCE0059753A /* ViewModifiers */,
+				B23C35732B014CB00059753A /* Styles */,
+				B23C35702B0148850059753A /* ErrorHandling */,
 				B23C35622AFEC3C30059753A /* SwiftData */,
 				B2AB35062AFD9D1C00945A1F /* RequestModels */,
 				B2AB35022AFD978F00945A1F /* AggregateModels */,
@@ -147,9 +251,10 @@
 				B2F61A772AEB873200A982B6 /* Models */,
 				B2F61A462AEB677D00A982B6 /* TCAPasskitApp.swift */,
 				B2F61A762AEB86E500A982B6 /* Navigation */,
+				B23C356F2B0146BF0059753A /* Screens */,
 				B2F61A752AEB86C000A982B6 /* Views */,
+				B23C35692B01456A0059753A /* SupportingFiles */,
 				B2F61AA62AEC18ED00A982B6 /* GoogleService-Info.plist */,
-				B2F61A4A2AEB677F00A982B6 /* Assets.xcassets */,
 			);
 			path = TCAPasskit;
 			sourceTree = "<group>";
@@ -157,9 +262,9 @@
 		B2F61A752AEB86C000A982B6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B23C35822B0157DD0059753A /* Universal */,
+				B23C35812B0157D30059753A /* Home */,
 				B2F61A712AEB7A7D00A982B6 /* MasterView.swift */,
-				B2F61A6F2AEB75FF00A982B6 /* LoginView.swift */,
-				B2F61A542AEB693200A982B6 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +292,8 @@
 				B2F61A7B2AEB8BFB00A982B6 /* Date.swift */,
 				B2AB350C2AFDBC4400945A1F /* Encodable.swift */,
 				B2AB350E2AFDC6F200945A1F /* URL.swift */,
+				B23C35652B0144FD0059753A /* Color.swift */,
+				B23C35672B01453A0059753A /* Font.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -270,8 +377,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B23C357B2B0152C10059753A /* Gotham-Bold.ttf in Resources */,
 				B2F61A4B2AEB677F00A982B6 /* Assets.xcassets in Resources */,
 				B2F61AA72AEC18ED00A982B6 /* GoogleService-Info.plist in Resources */,
+				B23C357E2B0152C70059753A /* Gotham-BookItalic.ttf in Resources */,
+				B23C357C2B0152C40059753A /* Gotham-Book.ttf in Resources */,
+				B23C357D2B0152C70059753A /* Gotham-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,19 +393,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2F61A702AEB75FF00A982B6 /* LoginView.swift in Sources */,
-				B2F61A552AEB693200A982B6 /* HomeView.swift in Sources */,
+				B2F61A702AEB75FF00A982B6 /* LoginScreen.swift in Sources */,
+				B2F61A552AEB693200A982B6 /* HomeScreen.swift in Sources */,
 				B2AB350D2AFDBC4400945A1F /* Encodable.swift in Sources */,
 				B2AB350F2AFDC6F300945A1F /* URL.swift in Sources */,
 				B23C35642AFEC3D30059753A /* SwiftDataProvider.swift in Sources */,
 				B2F61A7C2AEB8BFB00A982B6 /* Date.swift in Sources */,
 				B2F61A792AEB878500A982B6 /* User.swift in Sources */,
 				B2F61A742AEB849500A982B6 /* Router.swift in Sources */,
+				B23C35842B0158560059753A /* HomeTitleStack.swift in Sources */,
+				B23C35662B0144FD0059753A /* Color.swift in Sources */,
 				B2AB34FF2AFD928A00945A1F /* NetworkingService.swift in Sources */,
+				B23C35792B014DF00059753A /* RoundedBorderedImageModifier.swift in Sources */,
 				B2AB35042AFD97E100945A1F /* UserAGModel.swift in Sources */,
 				B23C35612AFEAAF90059753A /* KeanuAuthRequest.swift in Sources */,
+				B23C35802B0153610059753A /* NavArrow.swift in Sources */,
+				B23C35762B014CC60059753A /* BasicButtonStyle.swift in Sources */,
+				B23C35682B01453A0059753A /* Font.swift in Sources */,
 				B2F61A722AEB7A7D00A982B6 /* MasterView.swift in Sources */,
 				B2F61A472AEB677D00A982B6 /* TCAPasskitApp.swift in Sources */,
+				B23C35722B0148B20059753A /* ShowError.swift in Sources */,
 				B2F61AAB2AEC2C9100A982B6 /* KeanuAuth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +550,7 @@
 				DEVELOPMENT_TEAM = YLC373GKJ8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TCAPasskit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -460,6 +579,7 @@
 				DEVELOPMENT_TEAM = YLC373GKJ8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TCAPasskit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

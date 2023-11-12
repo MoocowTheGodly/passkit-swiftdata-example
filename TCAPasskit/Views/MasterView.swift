@@ -22,24 +22,28 @@ struct MasterView: View {
     var body: some View {
         NavigationStack(path: $router.navPath) {
             TabView {
-                HomeView()
+                HomeScreen()
                     .tabItem {
                         Label("Home", systemImage: "house.fill")
                     }
             }
             .environmentObject(router)
             .environmentObject(userAGModel)
+            .navigationBarBackButtonHidden()
             .onAppear {
                 UITabBar.appearance().backgroundColor = UIColor.lightGray
             }
             // for every screen, this switch statement needs to deal with additional enums placed Router.Destination (every full screen, basically)
             .navigationDestination(for: Router.Route.self) { destination in
-                switch destination {
-                case .loginView:
-                    LoginView()
-                        .environmentObject(userAGModel)
-
+                Group {
+                    switch destination {
+                    case .loginView:
+                        LoginScreen()
+                            .environmentObject(userAGModel)
+                            .navigationBarBackButtonHidden()
+                    }
                 }
+                .environmentObject(router)
             }
         }
     }

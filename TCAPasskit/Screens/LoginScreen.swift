@@ -7,7 +7,8 @@ import SwiftData
 import FirebaseFirestore
 
 @MainActor
-struct LoginView: View {
+struct LoginScreen: View {
+    @EnvironmentObject var router: Router
     @Environment(\.modelContext) private var context
     @EnvironmentObject var userModel: UserAGModel
 
@@ -24,7 +25,18 @@ struct LoginView: View {
 
     var body: some View {
         VStack(alignment: .center) {
-            Text("This is the login page!")
+            HStack {
+                Button {
+                    router.navigateBack()
+                } label: {
+                    NavArrow(direction: .left)
+                }
+                .buttonStyle(BasicButtonStyle())
+
+                Spacer()
+            }
+
+            Text("This is the login/profile screen!")
             Spacer()
             if let savedUser {
                 loggedInView(savedUser)
@@ -33,6 +45,8 @@ struct LoginView: View {
             }
             Spacer()
         }
+        .padding(.horizontal, 20)
+        .padding(.vertical, 20)
         .onReceive(userModel.$user) { user in
             saveUser(user)
         }
@@ -44,7 +58,7 @@ struct LoginView: View {
 
 // MARK: - ViewComponents
 
-extension LoginView {
+extension LoginScreen {
     private func loggedInView(_ savedUser: PersistentUser) -> some View {
         Group {
             Text("Logged in user: \(savedUser.firstName) \(savedUser.lastName)")
@@ -103,7 +117,7 @@ extension LoginView {
 
 // MARK: - ViewBehaviors
 
-extension LoginView {
+extension LoginScreen {
     func login() {
         Task {
             let authRequest = KeanuAuthRequest(email: email, password: password)
@@ -121,7 +135,6 @@ extension LoginView {
     }
 
     func saveUser(_ user: User?) {
-        print("user before cast: \(user)")
         guard let persistentUser = user?.asPersistentData() else { return }
 
         if savedUser != nil {
@@ -134,7 +147,6 @@ extension LoginView {
     }
 
     func saveAuth(_ auth: KeanuAuth?) {
-        print("auth before cast: \(auth)")
         guard let persistentAuth = auth?.asPersistentData() else { return }
 
         if savedAuth != nil {
@@ -148,7 +160,7 @@ extension LoginView {
 
 // MARK: - Other
 
-extension LoginView {
+extension LoginScreen {
     enum FocusedField: Hashable {
         case email
         case passwordShown

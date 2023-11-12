@@ -8,7 +8,7 @@
 import SwiftData
 import SwiftUI
 
-struct HomeView: View {
+struct HomeScreen: View {
     // environment object needed for all navigation using our Router
     @EnvironmentObject var router: Router
     @EnvironmentObject var userModel: UserAGModel
@@ -28,25 +28,11 @@ struct HomeView: View {
 
     var body: some View {
         VStack {
-            Text("this is home screen")
+            HomeTitleStack(savedUser: savedUser)
 
-            Button {
-                router.navigate(to: .loginView)
-            } label: {
-                Text("Tap to go to login page")
-            }
-
-            if let savedAuth, let savedUser {
-                Text("auth token: \(savedAuth.token)")
-
-                Button {
-                    Task {
-                        try await userModel.fetchUser(email: savedUser.email)
-                    }
-                } label: {
-                    Text("test auth")
-                }
-            }
+            Spacer()
         }
+        .padding(.horizontal, 20)
+        .padding(.vertical, 20)
     }
 }

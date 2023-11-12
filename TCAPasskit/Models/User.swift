@@ -11,12 +11,14 @@ class PersistentUser: ObservableObject, Hashable {
     var firstName: String
     var lastName: String
     var email: String
+    var imageURL: String?
 
-    init(id: String, firstName: String, lastName: String, email: String) {
+    init(id: String, firstName: String, lastName: String, email: String, imageURL: String?) {
         self.id = id
         self.firstName = firstName
         self.lastName = lastName
         self.email = email
+        self.imageURL = imageURL
     }
 }
 
@@ -25,8 +27,9 @@ struct User: Codable, Identifiable, Hashable {
     let firstName: String
     let lastName: String
     let email: String
+    let imageURL: String?
 
     func asPersistentData() -> PersistentUser {
-        return PersistentUser(id: id, firstName: firstName, lastName: lastName, email: email)
+        return PersistentUser(id: id, firstName: firstName, lastName: lastName, email: email, imageURL: imageURL)
     }
 }
