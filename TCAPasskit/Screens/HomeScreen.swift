@@ -34,5 +34,12 @@ struct HomeScreen: View {
         }
         .padding(.horizontal, 20)
         .padding(.vertical, 20)
+        .onAppear {
+            if let savedUser {
+                Task {
+                    try await userModel.fetchSubscriptions(userId: savedUser.id)
+                }
+            }
+        }
     }
 }

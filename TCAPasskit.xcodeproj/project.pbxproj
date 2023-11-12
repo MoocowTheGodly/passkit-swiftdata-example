@@ -20,6 +20,8 @@
 		B23C357E2B0152C70059753A /* Gotham-BookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B23C356B2B0145AF0059753A /* Gotham-BookItalic.ttf */; };
 		B23C35802B0153610059753A /* NavArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C357F2B0153610059753A /* NavArrow.swift */; };
 		B23C35842B0158560059753A /* HomeTitleStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C35832B0158560059753A /* HomeTitleStack.swift */; };
+		B23C35862B015BCA0059753A /* UserSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C35852B015BCA0059753A /* UserSubscription.swift */; };
+		B23C358A2B015E1A0059753A /* UserSubscriptionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C35892B015E1A0059753A /* UserSubscriptionResponse.swift */; };
 		B2AB34FF2AFD928A00945A1F /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AB34FE2AFD928A00945A1F /* NetworkingService.swift */; };
 		B2AB35042AFD97E100945A1F /* UserAGModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AB35032AFD97E100945A1F /* UserAGModel.swift */; };
 		B2AB350D2AFDBC4400945A1F /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AB350C2AFDBC4400945A1F /* Encodable.swift */; };
@@ -67,6 +69,8 @@
 		B23C357A2B0150D40059753A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B23C357F2B0153610059753A /* NavArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavArrow.swift; sourceTree = "<group>"; };
 		B23C35832B0158560059753A /* HomeTitleStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTitleStack.swift; sourceTree = "<group>"; };
+		B23C35852B015BCA0059753A /* UserSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSubscription.swift; sourceTree = "<group>"; };
+		B23C35892B015E1A0059753A /* UserSubscriptionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSubscriptionResponse.swift; sourceTree = "<group>"; };
 		B2AB34FE2AFD928A00945A1F /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		B2AB35032AFD97E100945A1F /* UserAGModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAGModel.swift; sourceTree = "<group>"; };
 		B2AB350C2AFDBC4400945A1F /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
@@ -196,12 +200,22 @@
 			path = Universal;
 			sourceTree = "<group>";
 		};
-		B2AB34FD2AFD927C00945A1F /* Services */ = {
+		B23C35872B015DD30059753A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				B23C35882B015E0A0059753A /* ResponseModels */,
+				B2AB35062AFD9D1C00945A1F /* RequestModels */,
 				B2AB34FE2AFD928A00945A1F /* NetworkingService.swift */,
 			);
-			path = Services;
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B23C35882B015E0A0059753A /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				B23C35892B015E1A0059753A /* UserSubscriptionResponse.swift */,
+			);
+			path = ResponseModels;
 			sourceTree = "<group>";
 		};
 		B2AB35022AFD978F00945A1F /* AggregateModels */ = {
@@ -239,14 +253,13 @@
 		B2F61A452AEB677D00A982B6 /* TCAPasskit */ = {
 			isa = PBXGroup;
 			children = (
+				B23C35872B015DD30059753A /* Networking */,
 				B23C357A2B0150D40059753A /* Info.plist */,
 				B23C35772B014DCE0059753A /* ViewModifiers */,
 				B23C35732B014CB00059753A /* Styles */,
 				B23C35702B0148850059753A /* ErrorHandling */,
 				B23C35622AFEC3C30059753A /* SwiftData */,
-				B2AB35062AFD9D1C00945A1F /* RequestModels */,
 				B2AB35022AFD978F00945A1F /* AggregateModels */,
-				B2AB34FD2AFD927C00945A1F /* Services */,
 				B2F61A7A2AEB8BF000A982B6 /* Extensions */,
 				B2F61A772AEB873200A982B6 /* Models */,
 				B2F61A462AEB677D00A982B6 /* TCAPasskitApp.swift */,
@@ -282,6 +295,7 @@
 			children = (
 				B2F61A782AEB878500A982B6 /* User.swift */,
 				B2F61AAA2AEC2C9100A982B6 /* KeanuAuth.swift */,
+				B23C35852B015BCA0059753A /* UserSubscription.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -398,6 +412,7 @@
 				B2AB350D2AFDBC4400945A1F /* Encodable.swift in Sources */,
 				B2AB350F2AFDC6F300945A1F /* URL.swift in Sources */,
 				B23C35642AFEC3D30059753A /* SwiftDataProvider.swift in Sources */,
+				B23C35862B015BCA0059753A /* UserSubscription.swift in Sources */,
 				B2F61A7C2AEB8BFB00A982B6 /* Date.swift in Sources */,
 				B2F61A792AEB878500A982B6 /* User.swift in Sources */,
 				B2F61A742AEB849500A982B6 /* Router.swift in Sources */,
@@ -405,6 +420,7 @@
 				B23C35662B0144FD0059753A /* Color.swift in Sources */,
 				B2AB34FF2AFD928A00945A1F /* NetworkingService.swift in Sources */,
 				B23C35792B014DF00059753A /* RoundedBorderedImageModifier.swift in Sources */,
+				B23C358A2B015E1A0059753A /* UserSubscriptionResponse.swift in Sources */,
 				B2AB35042AFD97E100945A1F /* UserAGModel.swift in Sources */,
 				B23C35612AFEAAF90059753A /* KeanuAuthRequest.swift in Sources */,
 				B23C35802B0153610059753A /* NavArrow.swift in Sources */,

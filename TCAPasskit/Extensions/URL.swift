@@ -21,15 +21,23 @@ extension URL {
         #endif
     }
 
-    static func userByUserId(_ userId: String) -> URL {
-        URL(string: "/user/v1/users/\(userId)", relativeTo: Self.default)!
-    }
-
     static var userService: URL {
         URL(string: "/user/v1/users", relativeTo: Self.default)!
     }
 
     static var authService: URL {
         URL(string: "/auth/v1/authentications", relativeTo: Self.default)!
+    }
+
+    static var billingService: URL {
+        URL(string: "/billing/v1", relativeTo: Self.default)!
+    }
+
+    static func userByUserId(_ userId: String) -> URL {
+        userService.appendingPathComponent(userId)
+    }
+
+    static func subscriptionsByUserId(_ userId: String) -> URL {
+        billingService.appendingPathComponent("users/\(userId)/subscriptions")
     }
 }
